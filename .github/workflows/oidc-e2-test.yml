@@ -1,7 +1,5 @@
 name: Snapshot based E2E OIDC tests workflow
-on:
-  pull_request:
-    branches: [ '**' ]
+on: [push, pull_request]
 env:
   VERSION: '2.9.0'
   KEYCLOAK_VERSION: '21.0.1'
