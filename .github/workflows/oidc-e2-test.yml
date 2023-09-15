@@ -83,7 +83,7 @@ jobs:
           cd opensearch-dashboards-${{ env.VERSION }}/config
           echo "opensearch_security.openid.connect_url: \"http://localhost:8080/auth/realms/master/.well-known/openid-configuration\"" >> opensearch_dashboards.yml
           echo "opensearch_security.openid.client_id: \"opensearch\"" >> opensearch_dashboards.yml
-          echo "opensearch_security.openid.client_secret: \""\"">> opensearch_dashboards.yml
+          echo "opensearch_security.openid.client_secret: \"\"" >> opensearch_dashboards.yml
           echo "opensearch_security.auth.type: [\"openid\"]" >> opensearch_dashboards.yml
           echo "opensearch_security.auth.multiple_auth_enabled: true" >> opensearch_dashboards.yml
           echo "opensearch_security.ui.openid.login.buttonname: \"OIDC\"" >> opensearch_dashboards.yml
